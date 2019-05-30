@@ -1,0 +1,1 @@
+drop tcp $HOME_NET any -> $EXTERNAL_NET 1337 (msg:”Monalisas first rule”; flow:established,to_server; content:"GET /malware"; reference:url,github.com/jpleger/mona-nids/README.md; classtype:trojan-activity; sid:3000001; rev:1;)
