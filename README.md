@@ -1,5 +1,5 @@
-# mona-nids
-NIDS DevOps Example
+# Mona's IDS
+An IDS (Sec)DevOps Example
 
 ## Signatures
 
