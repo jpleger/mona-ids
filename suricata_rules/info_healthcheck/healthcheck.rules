@@ -1,0 +1,1 @@
+alert tcp any any -> any 8800 (msg:"MONA - Test Rule 2"; reference:url,github.com/jpleger/mona-ids; classtype:trojan-activity; sid:8000003; rev:1; metadata:created_at 2019_05_24, updated_at 2019_05_24;)
