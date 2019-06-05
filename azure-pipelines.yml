@@ -10,5 +10,14 @@ pool:
   name: 'ubuntu'
 
 steps:
-- script: docker build -t mona-ids .
-  displayName: 'Build the docker container'
+- task: Docker@2
+  displayName: Login to Docker Hub
+  inputs:
+    command: login
+    containerRegistry: jpleger-dockerhub
+
+- task: Docker@2
+  displayName: Build and Push Docker Image
+  inputs:
+    command: buildAndPush
+    repository: jamespleger/mona-ids
