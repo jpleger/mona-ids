@@ -3,4 +3,4 @@ An IDS (Sec)DevOps Example
 
 ## Signatures
 
-Signatures are located in suricata_sigs/
+Signatures are located in suricata_rules/
